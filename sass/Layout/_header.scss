@@ -1,0 +1,200 @@
+.myNavBar {
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+
+    .myNavBar__left {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        .navbar-brand {
+            flex-grow: 1;
+            .logo--white { 
+                display: none;
+            }
+            .log--black { 
+                display: inline-block;
+            }
+            img {
+                width: 110px;
+            }
+        }
+        .myNavBar__categories {
+            flex-grow: 1;
+            @include stylText($color-black-light, $fs-1, $fw-0);
+            cursor: pointer;
+            i {
+                color: $color-gray-3;
+            }
+        }
+        .myNavBar__form-search {
+            flex-grow: 8;
+            @include styleFormSearch($color-white-cream, $color-white-0, $color-gray-4,$color-black-light);
+            // .input-group {
+            //     background-color: $color-white-cream;
+            //     .form-control {
+            //         background-color: transparent;
+            //         border: 1px solid transparent;
+            //         box-shadow: none;
+            //         &::placeholder {
+            //             // color: $color-black-light;
+            //         }
+            //         &:focus {
+            //             background-color: $color-white-0;
+            //             border-top-color: $color-gray-4;
+            //             border-left-color: $color-gray-4;
+            //             border-bottom-color: $color-gray-4;
+            //         }
+            //         &:focus + .input-group-append {
+            //             .input-group-text {
+            //                 background-color: $color-white-0;
+            //                 border-top-color: $color-gray-4;
+            //                 border-right-color: $color-gray-4;
+            //                 border-bottom-color: $color-gray-4;
+            //                 cursor: pointer;
+            //                 color: $color-red-0;
+            //                 // & = parent seclector
+            //                 &:hover {
+            //                     color: $color-white-0;
+            //                     background-color: $color-red-0;
+            //                 }
+            //             }
+            //         }
+            //     }
+            //     .input-group-append {
+            //         .input-group-text {
+            //             background-color: transparent;
+            //             border-color: transparent;
+            //             cursor: pointer;
+            //             color: $color-red-0;
+
+            //             // & = parent seclector
+            //             &:hover {
+            //                 color: $color-white-0;
+            //                 background-color: $color-red-0;
+            //             }
+            //         }
+            //     }
+            // }
+        }
+    }
+    .myNavBar__right {
+        .navbar-nav {
+            justify-content: space-between;
+            align-items: center;
+            .nav-item {
+                padding: $pd-2 + 2 $pd-2 + 2;
+                border-radius: $border-radius + 1;
+                position: relative;
+                &:hover {
+                    background-color: $color-gray-1;
+                    .overlay {
+                        display: block;
+                    }
+                }
+                .nav-link {
+                    @include stylText($color-black-light, $fs-1, $fw-0);
+                    white-space: nowrap;
+                }
+                .overlay {
+                    z-index: 1;
+                    white-space: normal;
+                    display: none;
+                    background-color: $color-white-0;
+                    width: 330px;
+                    padding: $pd-1 + 5;
+                    text-align: center;
+                    position: absolute;
+                    right: 0;
+                    top: 60px;
+                    border-top: $color-gray-1 1px solid;
+                    box-shadow: 0 4px 16px 0 rgba(20, 23, 28, 0.25);
+                    &::before {
+                        content: "";
+                        width: 15px;
+                        height: 15px;
+                        display: block;
+                        background-color: $color-white-0;
+                        border-left: 1px solid $color-gray-1;
+                        border-top: 1px solid $color-gray-1;
+                        position: absolute;
+                        top: -8px;
+                        right: 10%;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+            .myNavBar__cart {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                line-height: 50%;
+                .nav-link {
+                    @include stylText($color-black-light, $fs-1, $fw-0);
+                    font-size: $fs-3 + 2;
+                }
+            }
+            .myNavBar__button {
+                a {
+                    white-space: nowrap;
+                    display: flex;
+                }
+                &:hover {
+                    background-color: transparent;
+                }
+                .button-white {
+                    margin-right: $mg-0;
+                }
+            }
+        }
+    }
+
+    // max width 1200px
+    @include responsive("extra-large") {
+        .business,
+        .instructor {
+            display: none;
+        }
+        .myNavBar {
+            .myNavBar__right {
+                .navbar-nav {
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+
+    // min 1200.1px < 1396px
+    @media screen and (min-width: 1200.1px) and (max-width: 1375px) {
+        .myNavBar__right {
+            .navbar-nav {
+                .nav-item {
+                    white-space: nowrap;
+                    .nav-link {
+                        font-size: $fs-1 - 1;
+                    }
+                }
+            }
+        }
+        .myNavBar--reset {
+            padding-left: 0;
+        }
+    }
+
+    @include responsive("medium") {
+        .myNavBar__left {
+            .myNavBar__categories,
+            .myNavBar__form-search {
+                display: none;
+            }
+        }
+        .myNavBar__right {
+            width: 50%;
+            margin-left: auto;
+            .navbar-nav {
+                text-align-last: center;
+                .myNavBar__button {
+                    display: none;
+                }
+            }
+        }
+    }
+}

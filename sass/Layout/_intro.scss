@@ -1,0 +1,45 @@
+.intro {
+    background: linear-gradient(-45deg, $color-red-0, $color-purple-0);
+    padding: $pd-1 + 5;
+
+    .intro__content {
+        width: 78%;
+        margin: auto;
+        .intro__item {
+            display: flex;
+            align-items: center;
+            // justify-content: space-around;
+        }
+        i {
+            margin-right: $mg-1;
+            font-size: $fs-2 + 10;
+            color: $color-white-0;
+        }
+        .intro__detail {
+            p {
+                margin-bottom: 0;
+                &:first-child {
+                    @include stylText($color-white-0, $fs-3, $fw-0 + 1);
+                }
+                &:last-child {
+                    @include stylText($color-white-0, $fs-0, $fw-0);
+                }
+            }
+        }
+    }
+
+    // kích thước 1200px
+    @include responsive("extra-large") {
+        .intro__content {
+            .intro__icon {
+                display: none;
+            }
+        }
+    }
+    @include responsive("medium") {
+        & {
+            // tính năng này sẽ được gắn cho class gần nhất là 'intro'
+            display: none;
+        }
+    }
+}

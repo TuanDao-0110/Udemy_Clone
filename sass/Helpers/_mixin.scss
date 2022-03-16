@@ -1,0 +1,100 @@
+// không cos tham số
+
+// @mixin styleText {
+//     color: white;
+//     font-size: 15px;
+// }
+
+// có tham số
+@mixin stylText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+// tạo style bình thường của 1 button
+
+@mixin styleButton($color, $bg-color, $border, $fs, $fw, $pd-y, $pd-x) {
+    color: $color;
+    background-color: $bg-color;
+    border: 1px solid $border;
+    text-transform: capitalize;
+    font-size: $fs;
+    font-weight: $fw;
+    padding: $pd-y $pd-x;
+    cursor: pointer;
+    // tạo hover luôn cho <button> ngay trong hàm
+}
+@mixin hoverButton($color_hover, $bg-color_hover, $border_hover) {
+    &:hover {
+        color: $color_hover;
+        background-color: $bg-color_hover;
+        border: 1px solid $border_hover;
+    }
+}
+
+@mixin styleFormSearch($bg-color, $bg-color-focus, $border-color,$color) {
+    .input-group {
+        background-color: $bg-color;
+        .form-control {
+            background-color: transparent;
+            border: 1px solid transparent;
+            box-shadow: none;
+            transition: none;
+            color: $color;
+            &::placeholder {
+                color: $color;
+            }
+            &:focus {
+                background-color: $bg-color-focus;
+                border-top-color: $border-color;
+                border-left-color: $border-color;
+                border-bottom-color: $border-color;
+            }
+            &:focus + .input-group-append {
+                .input-group-text {
+                    background-color: $bg-color-focus;
+                    border-top-color: $border-color;
+                    border-right-color: $border-color;
+                    border-bottom-color: $border-color;
+                    cursor: pointer;
+                    color: $color-red-0;
+                    // & = parent seclector
+                    &:hover {
+                        color: $color-white-0;
+                        background-color: $color-red-0;
+                    }
+                }
+            }
+        }
+        .input-group-append {
+            .input-group-text {
+                background-color: transparent;
+                border-color: transparent;
+                cursor: pointer;
+                color: $color-red-0;
+
+                // & = parent seclector
+                &:hover {
+                    color: $color-white-0;
+                    background-color: $color-red-0;
+                }
+            }
+        }
+    }
+}
+@mixin responsive($screen) {
+    // key ở đây là tên giá trị trong array breakpoint
+    // có nghĩa là ' nếu $breakpoints có 1 giá trị tên là screen => true '
+    @if map-has-key($map: $breakpoints, $key: $screen) {
+        // sau đó ta lấy giá trị của key ra bởi hàm get-map
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $screen,
+        );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn "`{$screen}` is not valid";
+    }
+}

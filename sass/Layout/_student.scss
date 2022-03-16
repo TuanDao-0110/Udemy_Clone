@@ -1,0 +1,12 @@
+.student {
+    padding: $mg-3 0;
+    text-transform: capitalize;
+    .student__content {
+        width: 90%;
+        margin: 0 auto;
+        h2 {
+            margin-bottom: $mg-2;
+            font-size: $fs-5;
+        }
+    }
+}

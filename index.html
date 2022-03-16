@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elearning</title>
+    <!-- OWL CAROUSEL  -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <!-- BOOTSTRAP 4  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- FONT GOOGLE  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:ital,wght@0,300;0,700;0,800;1,400&family=Roboto+Condensed:ital@0;1&family=Work+Sans:ital,wght@0,300;0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./CSS/main.css" />
+  </head>
+  <body class="">
+    <!-- sidebar mini   -->
+    <div class="slidebarMini">
+      <button class="slidebarMini__button"><i class="fa fa-cog"></i></button>
+      <div class="sidebarMini__content">
+        <h2>Dark Mode</h2>
+        <div class="d-flex">
+          <span>Off</span>
+          <label class="switch" for="checkbox">
+            <input type="checkbox" name="" id="checkbox" />
+            <div class="slider"></div>
+          </label>
+
+          <span>On</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1. HEADER -->
+    <header>
+      <nav class="myNavBar navbar navbar-expand-md navbar-light">
+        <!-- d-md-none : có nghĩa là là display none có nghĩa là lớn hơn 767 px sẽ không hiện ra  -->
+        <div class="d-md-none col-sm-2 col-3">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div
+          class="col-6 col-lg-9 col-xl-7 col-md-8 col-sm-8 pl-0 myNavBar__col"
+        >
+          <div class="myNavBar__left">
+            <a class="navbar-brand mr-0" href="#"
+              ><img class="logo--black" src="./img/logo-coral.svg" alt="logo black" />
+              <img  class="logo--white" src="./img/logo-coral-white.svg" alt="logo white"
+            /></a>
+            <div class="myNavBar__categories">
+              <i class="fa fa-th"></i>
+              <span>Categories</span>
+            </div>
+            <form action="" class="myNavBar__form-search">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search for course"
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2"
+                    ><i class="fa fa-search"></i
+                  ></span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-3 col-lg-3 col-xl-5 col-md-4 col-sm-2 myNavBar--reset">
+          <div class="myNavBar__right">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item business">
+                <a class="nav-link" href="#">Udemy for business </a>
+                <div class="overlay">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Placeat, nihil?
+                  </p>
+                  <a href="#">Try Udemy for business</a>
+                </div>
+              </li>
+              <li class="nav-item instructor">
+                <a class="nav-link" href="#">Become an instructor</a>
+                <div class="overlay">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Placeat, nihil?
+                  </p>
+                  <a href="#">Try Udemy for business</a>
+                </div>
+              </li>
+              <li class="nav-item myNavBar__cart">
+                <a class="nav-link" href="#"
+                  ><i class="fa fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li class="nav-item myNavBar__button ">
+                <a class="nav-link" href="#">
+                  <button class="button button-white">Log in</button>
+                  <button class="button button-red">Sign up</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- 2.COVER  -->
+    <section class="cover">
+      <div class="cover__content">
+        <h1>learn on your schedule</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+          commodi.
+        </p>
+        <form action="" class="cover__form">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="What do you want to learn"
+            />
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- 3.INTRO  -->
+    <section class="intro">
+      <div class="intro__content">
+        <div class="row">
+          <div class="col-4">
+            <div class="intro__item">
+              <div class="intro__icon">
+                <i class="fa fa-bullseye"></i>
+              </div>
+              <div class="intro__detail">
+                <p>80.000 some thign</p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="intro__item">
+              <div class="intro__icon">
+                <i class="fa fa-spinner"></i>
+              </div>
+              <div class="intro__detail">
+                <p>80.000 some thign</p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="intro__item">
+              <div class="intro__icon">
+                <i class="fa fa-sync-alt"></i>
+              </div>
+              <div class="intro__detail">
+                <p>80.000 some thign</p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 4.COURSE  -->
+    <section class="courses">
+      <div class="courses__content">
+        <div class="row">
+          <div class="col-xl-4 col-md-3 col-12 courses__left">
+            <div class="">
+              <h2>the world largest course</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Commodi
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-8 col-md-9 col-12 courses__right">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link  active"
+                  id="dev-tab"
+                  data-toggle="tab"
+                  href="#dev"
+                  aria-selected="true"
+                  >Development</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="design-tab"
+                  data-toggle="tab"
+                  href="#design"
+                  role="tab"
+                  >design</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="business-tab"
+                  data-toggle="tab"
+                  href="#business"
+                  role="tab"
+                  >business</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="it-tab"
+                  data-toggle="tab"
+                  href="#it"
+                  role="tab"
+                  >IT</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="personal-tab"
+                  data-toggle="tab"
+                  href="#personal"
+                  role="tab"
+                  >personal</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="marketing-tab"
+                  data-toggle="tab"
+                  href="#marketing"
+                  role="tab"
+                  >marketing</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="photo-tab"
+                  data-toggle="tab"
+                  href="#photo"
+                  role="tab"
+                  >photography</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="dev"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <div class="owl-carousel owl-theme courses__carousel">
+                  <div class="card">
+                    <img
+                      src="./img/kh1.jpg"
+                      class="card-img-top"
+                      alt="course-1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        the ultimate my sql go from the beginning to the top
+                        level.
+                      </h5>
+                      <p class="card-text">Some quick example</p>
+                      <div class="card__star">
+                        <span>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-half"></i>
+                        </span>
+                        <span class="card__rate">4.5</span>
+                        <span class="card__total">(11.597)</span>
+                      </div>
+                      <div class="card__price">
+                        <span> $179.99 </span>
+                        <span>$9.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/kh2.jpg"
+                      class="card-img-top"
+                      alt="course-2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        the ultimate my sql go from the beginning to the top
+                        level.
+                      </h5>
+                      <p class="card-text">Some quick example text to</p>
+                      <div class="card__star">
+                        <span>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-half"></i>
+                        </span>
+                        <span class="card__rate">4.5</span>
+                        <span class="card__total">(11.597)</span>
+                      </div>
+                      <div class="card__price">
+                        <span> $179.99 </span>
+                        <span>$9.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/kh3.jpg"
+                      class="card-img-top"
+                      alt="course-1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        the ultimate my sql go from the beginning to the top
+                        level.
+                      </h5>
+                      <p class="card-text">Some quick example text to</p>
+
+                      <div class="card__star">
+                        <span>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-half"></i>
+                        </span>
+                        <span class="card__rate">4.5</span>
+                        <span class="card__total">(11.597)</span>
+                      </div>
+                      <div class="card__price">
+                        <span class=""> $179.99 </span>
+                        <span class="">$9.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/kh4.jpg"
+                      class="card-img-top"
+                      alt="course-1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        the ultimate my sql go from the beginning to the top
+                        level.
+                      </h5>
+                      <p class="card-text">Some quick example text to</p>
+                      <div class="card__star">
+                        <span>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-half"></i>
+                        </span>
+                        <span class="card__rate">4.5</span>
+                        <span class="card__total">(11.597)</span>
+                      </div>
+                      <div class="card__price">
+                        <span> $179.99 </span>
+                        <span>$9.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/kh5.jpg"
+                      class="card-img-top"
+                      alt="course-1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        the ultimate my sql go from the beginning to the top
+                        level.
+                      </h5>
+                      <p class="card-text">Some quick example text to</p>
+                      <div class="card__star">
+                        <span>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-half"></i>
+                        </span>
+                        <span class="card__rate">4.5</span>
+                        <span class="card__total">(11.597)</span>
+                      </div>
+                      <div class="card__price">
+                        <span class=""> $179.99 </span>
+                        <span class="">$9.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/kh6.jpg"
+                      class="card-img-top"
+                      alt="course-1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        the ultimate my sql go from the beginning to the top
+                        level.
+                      </h5>
+                      <p class="card-text">Some quick example text to</p>
+                      <div class="card__star">
+                        <span>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-half"></i>
+                        </span>
+                        <span class="card__rate">4.5</span>
+                        <span class="card__total">(11.597)</span>
+                      </div>
+                      <div class="card__price">
+                        <span> $179.99 </span>
+                        <span>$9.99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="design"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                design
+              </div>
+              <div
+                class="tab-pane fade"
+                id="business"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                business
+              </div>
+              <div
+                class="tab-pane fade"
+                id="it"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                it
+              </div>
+              <div
+                class="tab-pane fade"
+                id="personal"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                personal
+              </div>
+              <div
+                class="tab-pane fade"
+                id="marketing"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                marketing
+              </div>
+              <div
+                class="tab-pane fade"
+                id="photo"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                photography
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 5.VIEWING -->
+    <section class="viewing">
+      <div class="view__content">
+        <h2>Student are viewing</h2>
+        <div class="owl-carousel owl-theme viewing__carousel">
+          <div class="card">
+            <img src="./img/kh8.jpg" class="card-img-top" alt="course-1" />
+            <div class="card-body">
+              <h5 class="card-title">
+                the ultimate my sql go from the beginning to the top level.
+              </h5>
+              <p class="card-text">Some quick example</p>
+              <div class="card__star">
+                <span>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                </span>
+                <span class="card__rate">4.5</span>
+                <span class="card__total">(11.597)</span>
+              </div>
+              <div class="card__price">
+                <span> $179.99 </span>
+                <span>$9.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/kh10.jpg" class="card-img-top" alt="course-2" />
+            <div class="card-body">
+              <h5 class="card-title">
+                the ultimate my sql go from the beginning to the top level.
+              </h5>
+              <p class="card-text">Some quick example text to</p>
+              <div class="card__star">
+                <span>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                </span>
+                <span class="card__rate">4.5</span>
+                <span class="card__total">(11.597)</span>
+              </div>
+              <div class="card__price">
+                <span> $179.99 </span>
+                <span>$9.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/kh11.jpg" class="card-img-top" alt="course-1" />
+            <div class="card-body">
+              <h5 class="card-title">
+                the ultimate my sql go from the beginning to the top level.
+              </h5>
+              <p class="card-text">Some quick example text to</p>
+
+              <div class="card__star">
+                <span>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                </span>
+                <span class="card__rate">4.5</span>
+                <span class="card__total">(11.597)</span>
+              </div>
+              <div class="card__price">
+                <span class=""> $179.99 </span>
+                <span class="">$9.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/kh9.jpg" class="card-img-top" alt="course-1" />
+            <div class="card-body">
+              <h5 class="card-title">
+                the ultimate my sql go from the beginning to the top level.
+              </h5>
+              <p class="card-text">Some quick example text to</p>
+              <div class="card__star">
+                <span>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                </span>
+                <span class="card__rate">4.5</span>
+                <span class="card__total">(11.597)</span>
+              </div>
+              <div class="card__price">
+                <span> $179.99 </span>
+                <span>$9.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/kh12.jpg" class="card-img-top" alt="course-1" />
+            <div class="card-body">
+              <h5 class="card-title">
+                the ultimate my sql go from the beginning to the top level.
+              </h5>
+              <p class="card-text">Some quick example text to</p>
+              <div class="card__star">
+                <span>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                </span>
+                <span class="card__rate">4.5</span>
+                <span class="card__total">(11.597)</span>
+              </div>
+              <div class="card__price">
+                <span class=""> $179.99 </span>
+                <span class="">$9.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/kh13.jpg" class="card-img-top" alt="course-1" />
+            <div class="card-body">
+              <h5 class="card-title">
+                the ultimate my sql go from the beginning to the top level.
+              </h5>
+              <p class="card-text">Some quick example text to</p>
+              <div class="card__star">
+                <span>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                </span>
+                <span class="card__rate">4.5</span>
+                <span class="card__total">(11.597)</span>
+              </div>
+              <div class="card__price">
+                <span> $179.99 </span>
+                <span>$9.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/kh14.jpg" class="card-img-top" alt="course-1" />
+            <div class="card-body">
+              <h5 class="card-title">
+                the ultimate my sql go from the beginning to the top level.
+              </h5>
+              <p class="card-text">Some quick example text to</p>
+              <div class="card__star">
+                <span>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                </span>
+                <span class="card__rate">4.5</span>
+                <span class="card__total">(11.597)</span>
+              </div>
+              <div class="card__price">
+                <span> $179.99 </span>
+                <span>$9.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 6.BANNER  -->
+    <section class="banner">
+      <div class="container">
+        <h2>learn anytime, anywhere</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, magni?
+        </p>
+        <button class="button-red">sign up for free</button>
+        <div class="row">
+          <div class="col-6 text-right">
+            <img src="./img/apple_btn.png" alt="apple" />
+          </div>
+          <div class="col-6 text-left">
+            <img src="./img/google_btn.png" alt="google" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 7.CATEGORIES  -->
+    <section class="categories">
+      <div class="categories__content">
+        <h2>top categories</h2>
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+            <div class="categories__item">
+              <i class="fa fa-code"> </i>
+              <span>Development</span>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+            <div class="categories__item">
+              <i class="fa fa-chart-bar"> </i>
+              <span>business</span>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+            <div class="categories__item">
+              <i class="fa fa-laptop"> </i>
+              <span>it & software</span>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+            <div class="categories__item">
+              <i class="fa fa-pen"> </i>
+              <span>music</span>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+            <div class="categories__item">
+              <i class="fa fa-code"> </i>
+              <span>design</span>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+            <div class="categories__item">
+              <i class="fa fa-bullseye"> </i>
+              <span>personal</span>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+            <div class="categories__item">
+              <i class="fa fa-book"> </i>
+              <span>camera</span>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+            <div class="categories__item">
+              <i class="fa fa-music"> </i>
+              <span>photography</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 8.STUDENT  -->
+    <section class="student">
+      <div class="student__content">
+        <h2>what our student have to say</h2>
+        <div class="owl-carousel owl-theme student_carousel">
+          <div class="card card--feedback">
+            <div class="card-body">
+              <div class="card__top">
+                <div class="card__avatar">
+                  <img src="./img/s1.jpg" alt="" />
+                  <div>
+                    <p class="card__name">oscar javier</p>
+                    <div class="card__star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                laborum. Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Reprehenderit, rerum! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Rerum, laborum. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Reprehenderit, rerum!
+              </p>
+            </div>
+          </div>
+          <div class="card card--feedback">
+            <div class="card-body">
+              <div class="card__top">
+                <div class="card__avatar">
+                  <img src="./img/s2.jpg" alt="" />
+                  <div>
+                    <p class="card__name">oscar javier</p>
+                    <div class="card__star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                laborum. Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Reprehenderit, rerum! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Rerum, laborum. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Reprehenderit, rerum!
+              </p>
+            </div>
+          </div>
+          <div class="card card--feedback">
+            <div class="card-body">
+              <div class="card__top">
+                <div class="card__avatar">
+                  <img src="./img/s3.jpg" alt="" />
+                  <div>
+                    <p class="card__name">oscar javier</p>
+                    <div class="card__star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                laborum. Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Reprehenderit, rerum! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Rerum, laborum. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Reprehenderit, rerum!
+              </p>
+            </div>
+          </div>
+          <div class="card card--feedback">
+            <div class="card-body">
+              <div class="card__top">
+                <div class="card__avatar">
+                  <img src="./img/s4.jpg" alt="" />
+                  <div>
+                    <p class="card__name">oscar javier</p>
+                    <div class="card__star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                laborum. Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Reprehenderit, rerum! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Rerum, laborum. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Reprehenderit, rerum!
+              </p>
+            </div>
+          </div>
+          <div class="card card--feedback">
+            <div class="card-body">
+              <div class="card__top">
+                <div class="card__avatar">
+                  <img src="./img/s5.jpg" alt="" />
+                  <div>
+                    <p class="card__name">oscar javier</p>
+                    <div class="card__star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                laborum. Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Reprehenderit, rerum! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Rerum, laborum. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Reprehenderit, rerum!
+              </p>
+            </div>
+          </div>
+          <div class="card card--feedback">
+            <div class="card-body">
+              <div class="card__top">
+                <div class="card__avatar">
+                  <img src="./img/s6.jpg" alt="" />
+                  <div>
+                    <p class="card__name">oscar javier</p>
+                    <div class="card__star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                laborum. Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Reprehenderit, rerum! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Rerum, laborum. Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit. Reprehenderit, rerum!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 9.PARTNER -->
+    <section class="partners">
+      <div class="partner__content">
+        <div class="partner__text">
+          <p>trusted by the company all sizw</p>
+        </div>
+        <div class="partner__img">
+          <div class="partner__item">
+            <img src="./img/booking.svg" alt="" />
+          </div>
+          <div class="partner__item">
+            <img src="./img/volkswagen.svg" alt="" />
+          </div>
+          <div class="partner__item">
+            <img src="./img/adidas.svg" alt="" />
+          </div>
+          <div class="partner__item">
+            <img src="./img/mercedes.svg" alt="" />
+          </div>
+          <div class="partner__item">
+            <img src="./img/pinterest.svg" alt="" />
+          </div>
+          <div class="partner__item">
+            <img src="./img/paypal.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 10.JOBS  -->
+    <section class="jobs">
+      <div class="job__content container">
+        <div class="row">
+          <div class="col-12 col-md-6 border-right">
+            <div class="job__item">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+                facere!
+              </p>
+              <button class="button-red">start teaching today</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="job__item">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
+                facere!
+              </p>
+              <button class="button-red">get udemy for business</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 11.FOOTER -->
+    <footer>
+      <div class="footer__top">
+        <div class="row">
+          <div class="col-md-9 col-12">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link bold" href="#">udemy for business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bold" href="#">teach on udemy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">about us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">udemy for business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">udemy for business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">affilate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">udemy for business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">udemy for business</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="btn-group dropup text-md-right text-left">
+              <button
+                type="button"
+                class="btn button-dropup dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fa fa-globe"></i> English
+              </button>
+              <div class="dropdown-menu">
+                <!-- Dropdown menu links -->
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Spainish</a>
+                <a class="dropdown-item" href="#">China</a>
+                <a class="dropdown-item" href="#">France</a>
+                <a class="dropdown-item" href="#">Espainos</a>
+                <a class="dropdown-item" href="#">Italiano </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer__bottom">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <img class="logo--black" src="./img/logo-coral.svg" alt="logo black" />
+            <img  class="logo--white" src="./img/logo-coral-white.svg" alt="logo white"
+          />
+            <span>Copyright © 2020 Udemy</span>
+          </div>
+          <div class="col-md-6 col-12">
+            <ul class="nav justify-content-md-end">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">term</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JQUERRY -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- OWL CAROUSEL  -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".courses__carousel").owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 2,
+            margin: 5,
+          },
+          945: {
+            items: 3,
+            margin: 5,
+          },
+          1000: {
+            items: 4,
+            margin: 5,
+          },
+          1450: {
+            items: 4,
+            margin: 15,
+          },
+        },
+      });
+      $(".viewing__carousel").owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 2,
+            margin: 5,
+          },
+          600: {
+            items: 3,
+            margin: 5,
+          },
+          768: {
+            items: 4,
+            margin: 5,
+          },
+          945: {
+            items: 3,
+            margin: 5,
+          },
+          1000: {
+            items: 6,
+            margin: 5,
+          },
+          1450: {
+            items: 6,
+            margin: 15,
+          },
+        },
+      });
+
+      $(".student_carousel").owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          900: {
+            items: 2,
+          },
+          1200: {
+            item: 3,
+          },
+        },
+      });
+    </script>
+    <!-- BOOTSTRAP JS  -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- MAIN JS  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

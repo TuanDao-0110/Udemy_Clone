@@ -1,0 +1,17 @@
+.darkMode {
+    .categories {
+        .categories__content {
+            h2 {
+            color: $color-drak-5;
+            }
+            .categories__item {
+                border-color: $color-drak-2;
+                background-color: $color-drak-6;
+                box-shadow: 0 3px 1px 0 #152e4d;
+                &:hover {
+                    box-shadow: 0 0 3px 2px $color-drak-0;
+                }
+            }
+        }
+    }
+}

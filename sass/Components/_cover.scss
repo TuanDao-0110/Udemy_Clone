@@ -1,0 +1,33 @@
+.cover {
+    background-image: url(../../img/cover.jpg);
+    // dùng extend để kế thừa class.backgroundImg trong file 'extend.scss'
+    // @extend .backgroundImg;
+    @extend %backgroundImg;
+    height: 500px;
+    position: relative;
+    .cover__content {
+        max-width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 12%;
+        transform: translateY(-50%);
+        text-transform: capitalize;
+        h1 {
+            @include stylText($color-white-0, $fs-2, $fw-1 + 100);
+        }
+        p {
+            @include stylText($color-white-0, $fs-3, $fw-0);
+        }
+        .cover__form {
+            @include styleFormSearch($color-white-0, $color-white-0, $color-white-0,$color-black-light);
+        }
+    }
+
+    // kích thước 576px
+    @include responsive("small") {
+        .cover__content {
+            max-width: 400px;
+            left: 10%;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+// .backgroundImg{
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
+
+//  place holder của scss => với tính chất này thì sẽ không được biên dịch ---> .css
+%backgroundImg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

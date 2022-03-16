@@ -1,0 +1,40 @@
+.darkMode {
+    .owl-carousel {
+        .card {
+            background: $color-drak-0;
+            border: 1px solid $color-drak-2;
+            .card-body {
+                .card-title {
+                    color: $color-drak-5;
+                }
+                .card-text {
+                    color: $color-drak-3;
+                }
+                .card__star {
+                    .card__rate {
+                        color: $color-drak-5;
+                    }
+                    .card__total {
+                        color: $color-drak-3;
+                    }
+                }
+                .card__price {
+                    span {
+                        &:first-child {
+                            color: $color-drak-3;
+                        }
+                        &:last-child {
+                            color: $color-drak-5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card--feedback {
+        background-color: $color-drak-4;
+        .card-body {
+            color: $color-drak-5;
+        }
+    }
+}

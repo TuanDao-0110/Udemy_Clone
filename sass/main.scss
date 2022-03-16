@@ -1,0 +1,40 @@
+// 1. tạo biến trước.
+@import "./Helpers/_variables.scss";
+@import "./Helpers/_extend";
+
+// 2. tạo file mixin
+// @import url(./Helpers/_mixin.scss);
+@import "./Helpers/mixin";
+// 3. Vendor
+@import "./Base/reset";
+@import "./Base/customize";
+
+@import "./Layout/_header.scss";
+@import "./Layout/_footer.scss";
+@import "./Layout/viewing";
+@import "./Layout/cate";
+@import "./Components/_button.scss";
+@import "./Layout/banner";
+@import "./Layout/student";
+@import "./Layout/partner";
+@import "./Page/_home.scss";
+@import "./Layout/job";
+
+@import "./Layout/slidebarmini";
+// theme
+@import "./theme/dark/sidebarMiniDark";
+@import "./theme/dark/resetDark";
+@import "./theme/dark/headerDark";
+@import "./theme/dark/buttonDark";
+@import "./theme/dark/courseDark";
+@import "./theme/dark/cardDark";
+@import "./theme/dark/cateDark";
+@import "./theme/dark/studentDark";
+@import "./theme/dark/partnerDark";
+@import "./theme/dark/jobDark";
+@import "./theme/dark/footerDark";
+// cover
+@import "./Components/cover";
+@import "./Layout/intro";
+@import "./Layout/course";
+@import "./Components/card";

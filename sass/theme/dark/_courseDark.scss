@@ -1,0 +1,27 @@
+.darkMode {
+    .courses {
+        .courses__content {
+            .courses__left {
+                background: $color-drak-6;
+                h2,
+                p {
+                    color: $color-drak-5;
+                }
+            }
+            #myTab {
+                border-bottom: 1px solid $color-drak-2;
+                li {
+                    .nav-link {
+                        color: $color-drak-3;
+                        &.active {
+                            background-color: transparent;
+                        }
+                        &:hover {
+                            color: $color-drak-5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

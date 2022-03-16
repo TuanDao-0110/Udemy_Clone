@@ -1,0 +1,15 @@
+.darkMode {
+    .jobs {
+        background-color: $color-drak-6;
+        .job__content {
+            .border-right { 
+                border-right-color:$color-drak-2!important ;
+            }
+            .job__item {
+                h2 {
+                    color: $color-drak-5;
+                }
+            }
+        }
+    }
+}

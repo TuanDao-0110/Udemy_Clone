@@ -1,0 +1,8 @@
+body {
+    // class darkMode nằm trong thẻ body
+    &.darkMode {
+        color: $color-drak-3;
+        background-color: $color-drak-1;
+        text-transform: capitalize;
+    }
+}
